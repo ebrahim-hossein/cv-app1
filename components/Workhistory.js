@@ -38,7 +38,7 @@ export default function Workhistory() {
         </div>
       </div>
       <div className=" mt-20 ">
-        <div className="grid lg:grid-cols-2 gap-14 m-auto content-center justify-center ">
+        <div className="grid lg:grid-cols-2 gap-14 m-auto content-center justify-center max-w-5xl">
           <Work />
           <Work />
           <Work />

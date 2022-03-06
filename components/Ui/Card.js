@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Card(props) {
   return (
     <div className=" ">
-      <div className="grid grid-cols-2 w-96 h-40 bg-[#131516] rounded-2xl relative border-4 border-[#2A2D31] shadow-2xl">
+      <div className="grid grid-cols-2 w-96 h-40 bg-[#131516] rounded-2xl relative border-4 border-[#2A2D31] shadow-2xl  flex justify-center content-center m-auto">
         <div className=" w-40 h-40  absolute left-48 bottom-16 ">
           <img
             alt="1"

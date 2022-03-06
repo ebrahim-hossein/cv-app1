@@ -37,7 +37,7 @@ export default function ContactMe() {
           <p className=" text-gray-700 ml-10 text-xl font-medium">&lt;p&gt;</p>
         </div>
       </div>
-      <div className="grid md:grid-cols-5 grid-cols-2 gap-14 m-auto content-center justify-center my-16">
+      <div className="grid md:grid-cols-5 grid-cols-2 gap-14 m-auto content-center justify-center my-16 max-w-5xl">
         <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
           <img
             alt="1"

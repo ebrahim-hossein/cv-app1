@@ -38,7 +38,7 @@ export default function Portfolio() {
         </div>
       </div>
       <div className=" mt-20 ">
-        <div className="grid lg:grid-cols-2 gap-y-28 m-auto content-center justify-center gap-x-14">
+        <div className="grid lg:grid-cols-2 gap-y-28 m-auto content-center justify-center gap-x-14 max-w-5xl">
           <Card />
           <Card />
           <Card />
