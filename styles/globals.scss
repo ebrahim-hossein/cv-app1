@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @import "./Home.scss";
-@import "../Components/info.scss";
-@import "../Components/Skills.module.scss";
+@import "../components/info.scss";
+@import "../components/Skills.module.scss";
 body {
   padding: 0;
   margin: 0;
