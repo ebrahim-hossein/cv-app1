@@ -52,9 +52,7 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex items-center justify-end sm:items-stretch sm:justify-center pr-3">
                 <div className="flex-shrink-0 flex items-center">
-                  <Image
-                    width={500}
-                    height={500}
+                  <img
                     className="block lg:hidden h-8 w-auto"
                     src="/logo.svg"
                     alt="Workflow"
@@ -75,13 +73,7 @@ export default function Navbar() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         <div className="flex">
-                          <Image
-                            width={500}
-                            height={500}
-                            alt="12"
-                            src={item.img}
-                            className="h-5 pr-3"
-                          />
+                          <img alt="12" src={item.img} className="h-5 pr-3" />
                           {item.name}
                         </div>
                       </a>
@@ -108,13 +100,7 @@ export default function Navbar() {
                   aria-current={item.current ? "page" : undefined}
                 >
                   <div className="flex">
-                    <Image
-                      alt="2"
-                      width={500}
-                      height={500}
-                      src={item.img}
-                      className="h-5 pr-3"
-                    />
+                    <img alt="2" src={item.img} className="h-5 pr-3" />
                     {item.name}
                   </div>
                 </Disclosure.Button>
