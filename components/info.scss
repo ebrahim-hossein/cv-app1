@@ -1,0 +1,66 @@
+.word {
+  letter-spacing: 5px;
+
+  color: rgb(210, 238, 88);
+  animation: word 15s infinite ease-in-out;
+}
+
+.word:nth-child(1) {
+  animation-delay: -15s;
+}
+.word:nth-child(2) {
+  animation-delay: -11s;
+}
+.word:nth-child(3) {
+  animation-delay: -7s;
+}
+.word:nth-child(4) {
+  animation-delay: -3s;
+}
+
+@keyframes word {
+  0%,
+  5%,
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  20%,
+  80% {
+    filter: blur(35px);
+    opacity: 0;
+  }
+}
+
+// #####GILICH######
+
+.svgWrap {
+  .svgWrap__text {
+    left: 0;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      clip: rect(0, 0, 0, 0);
+    }
+    &:nth-child(2) {
+      //fill: #fffafa;
+      left: -4px;
+      animation: svg-glitch-effect 2s infinite linear alternate-reverse;
+    }
+    &:nth-child(3) {
+      display: flex;
+      justify-content: center;
+
+      left: 4px;
+      animation: svg-glitch-effect 3s infinite linear alternate-reverse;
+    }
+  }
+  $steps: 20;
+  @keyframes svg-glitch-effect {
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        clip: rect(random(375) + px, 375px, random(375) + px, 0px);
+      }
+    }
+  }
+}
