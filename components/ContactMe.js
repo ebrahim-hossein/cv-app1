@@ -39,96 +39,76 @@ export default function ContactMe() {
       </div>
       <div className="grid md:grid-cols-5 grid-cols-2 gap-14 m-auto content-center justify-center my-16">
         <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/Github.svg"
             className=" w-7 grid justify-center content-center m-auto"
           />
           <p className=" text-neutral-50 grid justify-center content-center m-auto">
             Github
           </p>
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/Down2.svg"
             className=" w-5 grid justify-center content-center m-auto"
           />
         </button>
         <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/LinkedIn.svg"
             className=" w-7 grid justify-center content-center m-auto"
           />
           <p className=" text-neutral-50 grid justify-center content-center m-auto">
             LinkedIn
           </p>
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/Down2.svg"
             className=" w-5 grid justify-center content-center m-auto"
           />
         </button>
         <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/Dribbble.svg"
             className=" w-7 grid justify-center content-center m-auto"
           />
           <p className=" text-neutral-50 grid justify-center content-center m-auto">
             Dribbble
           </p>
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/Down2.svg"
             className=" w-5 grid justify-center content-center m-auto"
           />
         </button>
         <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/Github.svg"
             className=" w-9 grid justify-center content-center m-auto"
           />
           <p className=" text-neutral-50 grid justify-center content-center m-auto">
             Github
           </p>
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/Down2.svg"
             className=" w-5 grid justify-center content-center m-auto"
           />
         </button>
         <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/Github.svg"
             className=" w-9 grid justify-center content-center m-auto"
           />
           <p className=" text-neutral-50 grid justify-center content-center m-auto">
             Github
           </p>
-          <Image
+          <img
             alt="1"
-            width={500}
-            height={500}
             src="./assist/Down2.svg"
             className=" w-5 grid justify-center content-center m-auto"
           />
