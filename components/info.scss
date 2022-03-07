@@ -37,7 +37,7 @@
 .svgWrap {
   .svgWrap__text {
     left: 0;
-    right: 0;
+    @apply m-auto w-1/2 sm:w-2/3;
 
     &:nth-child(2),
     &:nth-child(3) {
@@ -46,12 +46,12 @@
     &:nth-child(2) {
       //fill: #fffafa;
       left: -4px;
-      right: 0;
+
       animation: svg-glitch-effect 2s infinite linear alternate-reverse;
     }
     &:nth-child(3) {
       left: 4px;
-      right: 0;
+
       animation: svg-glitch-effect 3s infinite linear alternate-reverse;
     }
   }

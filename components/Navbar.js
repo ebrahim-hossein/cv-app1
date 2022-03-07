@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Image from "next/image";
+
 const navigation = [
   {
     name: "Hossein Dehghan",
@@ -39,9 +39,9 @@ export default function Navbar() {
         <>
           <div className=" mx-auto px-2 sm:px-6 lg:px-8 ">
             <div className="  flex items-center justify-between h-16 ">
-              <div className="absolute  left-0 flex items-center md:hidden">
+              <div className="absolute  left-0 flex items-center md:hidden ">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white ml-3">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -50,15 +50,15 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-end sm:items-stretch sm:justify-center pr-3">
+              <div className="flex-1 flex items-center justify-end md:items-stretch md:justify-center pr-3">
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
                     src="/logo.svg"
-                    alt="Workflow"
+                    alt="Hossein Dehghan"
                   />
                 </div>
-                <div className="hidden sm:block sm:ml-6">
+                <div className="hidden md:block sm:ml-6">
                   <div className=" relative flex space-x-4">
                     {navigation.map((item) => (
                       <a
@@ -68,7 +68,7 @@ export default function Navbar() {
                           item.current
                             ? "  bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white p-2 "
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "px-4 py-3 rounded-lg text-sm font-medium"
+                          "md:px-3 md:py-2 lg:px-3 lg:py-4 rounded-lg text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -84,7 +84,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button

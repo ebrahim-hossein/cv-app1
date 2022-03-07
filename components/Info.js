@@ -38,22 +38,22 @@ export default function Info() {
           </div>
         </div>
 
-        <div className="  sm:mt-72 mt-40 mb-52 ">
+        <div className=" sm:mt-72 mt-40 mb-52 ">
           <div className="svgWrap relative flex justify-center m-auto content-center ">
             <img
               alt="2"
               src="./logo.svg"
-              className="svgWrap__text lg:h-96 lg:w-96 w-60 h-60 absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
+              className="svgWrap__text  absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
             />
             <img
               alt="2"
               src="./logo.svg"
-              className="svgWrap__text lg:h-96 lg:w-96 w-60 h-60 absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
+              className="svgWrap__text  absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
             />
             <img
               alt="2"
               src="./logo.svg"
-              className="svgWrap__text lg:h-96 lg:w-96 w-60 h-60 absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
+              className="svgWrap__text  absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
             />
           </div>
         </div>
