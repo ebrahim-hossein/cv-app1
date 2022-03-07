@@ -2,7 +2,7 @@ import Image from "next/image";
 import Styles from "./Skills.module.scss";
 export default function ContactMe() {
   return (
-    <div>
+    <div className="m-5 sm:m-0">
       <span className=" text-center justify-center flex my-24 text-gray-600">
         - - - - - - - - - - - - - - - - - - - - - -
       </span>

@@ -6,7 +6,7 @@
 .glitch {
   position: relative;
   color: rgb(210, 238, 88);
-  font-size: 3em;
+  @apply text-4xl sm:text-7xl;
   letter-spacing: 0.5em;
 
   animation: glitch-skew 1s infinite linear alternate-reverse;

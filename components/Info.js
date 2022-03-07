@@ -2,18 +2,22 @@ import Image from "next/image";
 export default function Info() {
   return (
     <div id="HosseinDehghan">
-      <div className="sm:grid sm:grid-cols-2 sm:max-w-5xl justify-center content-center m-auto ">
-        <div className="px-3  py-4  sm:text-left justify-center relative sm:m-0 m-10">
-          <div className="word text-7xl lg:text-[8rem] absolute ">I’m</div>
-          <div className="word text-7xl lg:text-[8rem] absolute">Hossein</div>
-          <div className="word text-7xl lg:text-[8rem] absolute">
+      <div className="sm:grid sm:grid-cols-2 sm:max-w-5xl justify-center content-center m-auto">
+        <div className="px-3  py-4  sm:text-left justify-center relative sm:m-0 m-5">
+          <div className="word  text-5xl sm:text-7xl lg:text-[8rem] absolute ">
+            I’m
+          </div>
+          <div className="word text-5xl sm:text-7xl lg:text-[8rem] absolute">
+            Hossein
+          </div>
+          <div className="word text-5xl sm:text-7xl lg:text-[8rem] absolute">
             Web Developer
           </div>
-          <div className="word text-7xl lg:text-[8rem] absolute">
+          <div className="word text-5xl sm:text-7xl lg:text-[8rem] absolute">
             Web Desinger
           </div>
 
-          <div className="sm:mt-80 mt-52 sm:max-w-sm lg:max-w-lg  m-auto">
+          <div className="sm:mt-80 mt-52 sm:max-w-md lg:max-w-lg  m-auto">
             <div className="flex">
               <p className=" text-gray-700  text-xl font-medium">&lt;h3&gt;</p>
               <h3 className=" text-gray-100 font-bold ">About Me</h3>
@@ -34,22 +38,22 @@ export default function Info() {
           </div>
         </div>
 
-        <div className="svgWrap  sm:mt-72 mt-40 mb-52  ">
-          <div className="relative flex justify-center m-auto content-center">
+        <div className="  sm:mt-72 mt-40 mb-52 ">
+          <div className="svgWrap relative flex justify-center m-auto content-center ">
             <img
               alt="2"
               src="./logo.svg"
-              className="svgWrap__text lg:h-96 lg:h-96 h-72 h-72 absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
+              className="svgWrap__text lg:h-96 lg:w-96 w-60 h-60 absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
             />
             <img
               alt="2"
               src="./logo.svg"
-              className="svgWrap__text ld:h-96 lg:h-96 h-72 h-72 absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
+              className="svgWrap__text lg:h-96 lg:w-96 w-60 h-60 absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
             />
             <img
               alt="2"
               src="./logo.svg"
-              className="svgWrap__text lg:h-96 lg:h-96 h-72 h-72 absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
+              className="svgWrap__text lg:h-96 lg:w-96 w-60 h-60 absolute top-1/2 right-1/2 translate-y-[-50%] translate-x-1/2"
             />
           </div>
         </div>
