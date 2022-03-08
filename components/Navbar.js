@@ -26,18 +26,18 @@ const navigation = [
 ];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(navigation);
+  return classes.filter(Boolean).join();
 }
 
 export default function Navbar() {
-  const [navItems, setNavItems] = useState();
+  const [navItems, setNavItems] = useState(navigation);
   const activeHandler = (name) => {
-    setNavItems((prevState) =>
-      prevState.map((item) => {
+    setNavItems((prevState) => {
+      return prevState.map((item) => {
         if (item.name === name) return { ...item, current: true };
         else return { ...item, current: false };
-      })
-    );
+      });
+    });
   };
   return (
     <Disclosure
