@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-
+import { useState } from "react";
 const navigation = [
   {
     name: "Hossein Dehghan",
@@ -26,10 +26,19 @@ const navigation = [
 ];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(navigation);
 }
 
 export default function Navbar() {
+  const [navItems, setNavItems] = useState();
+  const activeHandler = (name) => {
+    setNavItems((prevState) =>
+      prevState.map((item) => {
+        if (item.name === name) return { ...item, current: true };
+        else return { ...item, current: false };
+      })
+    );
+  };
   return (
     <Disclosure
       as="nav"
@@ -60,7 +69,7 @@ export default function Navbar() {
                 </div>
                 <div className="hidden md:block sm:ml-6">
                   <div className=" relative flex space-x-4">
-                    {navigation.map((item) => (
+                    {navItems.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -71,6 +80,9 @@ export default function Navbar() {
                           "md:px-3 md:py-2 lg:px-3 lg:py-4 rounded-lg text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
+                        onClick={() => {
+                          activeHandler(item.name);
+                        }}
                       >
                         <div className="flex">
                           <img alt="12" src={item.img} className="h-5 pr-3" />

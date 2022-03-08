@@ -4,6 +4,9 @@
 
 @import "../components/info.scss";
 @import "../components/Skills.module.scss";
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
