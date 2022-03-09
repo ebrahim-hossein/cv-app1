@@ -21,7 +21,12 @@ const navigation = [
     img: "./Work.svg",
     current: false,
   },
-  { name: "Contact Me", href: "#", img: "./phone.svg", current: false },
+  {
+    name: "Contact Me",
+    href: "#ContactMe",
+    img: "./phone.svg",
+    current: false,
+  },
   { name: "Download CV", href: "#", img: "./Down.svg", current: false },
 ];
 
@@ -78,7 +83,7 @@ export default function Navbar() {
                           item.current
                             ? "  bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white p-2 "
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "md:px-3 md:py-2 lg:px-3 lg:py-4 rounded-lg text-sm font-medium"
+                          "md:px-3 md:py-2 lg:px-3 lg:py-3 rounded-lg text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                         onClick={() => {
