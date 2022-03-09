@@ -110,11 +110,13 @@ export default function Navbar() {
                     "block px-3 py-4 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
-                  onClick={() => {
-                    activeHandler(item.name);
-                  }}
                 >
-                  <div className="flex">
+                  <div
+                    className="flex"
+                    onClick={() => {
+                      activeHandler(item.name);
+                    }}
+                  >
                     <img alt="2" src={item.img} className="h-5 pr-3" />
                     {item.name}
                   </div>
