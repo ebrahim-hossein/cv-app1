@@ -27,7 +27,7 @@ const navigation = [
     img: "./phone.svg",
     current: false,
   },
-  { name: "Download CV", href: "#", img: "./Down.svg", current: false },
+  { name: "Download CV", href: "./A4.pdf", img: "./Down.svg", current: false },
 ];
 
 function classNames(...classes) {

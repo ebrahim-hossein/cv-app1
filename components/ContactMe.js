@@ -27,22 +27,52 @@ export default function ContactMe() {
               &lt;/h1&gt;
             </p>
           </div>
-
-          <p className=" text-gray-700 ml-10 text-xl font-medium">&lt;/p&gt;</p>
-          <p className=" text-gray-300 font-medium  mx-14 my-3 sm:mx-0">
-            Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-            cillum dolor.
-          </p>
-          <p className=" text-gray-700 ml-10 text-xl font-medium">&lt;p&gt;</p>
+          <div className="sm:flex justify-between content-center mt-7 gap-14">
+            <div>
+              <p className=" text-gray-700 ml-10 text-xl font-medium">
+                &lt;/p&gt;
+              </p>
+              <p className=" text-gray-300 font-medium  mx-14 my-3 sm:mx-0">
+                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+                ullamco cillum dolor.
+              </p>
+              <p className=" text-gray-700 ml-10 text-xl font-medium">
+                &lt;p&gt;
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "./A4.pdf";
+              }}
+              className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7"
+            >
+              <p className=" text-neutral-50">Download CV</p>
+              <img
+                alt="1"
+                src="./Down.svg"
+                className=" w-7 grid justify-center content-center m-auto"
+              />
+            </button>
+          </div>
         </div>
       </div>
       <div className="grid md:grid-cols-5 grid-cols-2 gap-14 m-auto content-center justify-center my-16 max-w-5xl">
-        <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "https://github.com/hd-9";
+          }}
+          className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500"
+        >
           <img
             alt="1"
             src="./assist/Github.svg"
             className=" w-7 grid justify-center content-center m-auto"
           />
+
           <p className=" text-neutral-50 grid justify-center content-center m-auto">
             Github
           </p>
@@ -52,7 +82,15 @@ export default function ContactMe() {
             className=" w-5 grid justify-center content-center m-auto"
           />
         </button>
-        <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href =
+              "https://www.linkedin.com/in/hossein-dehghan-4b5b8b231/";
+          }}
+          className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500"
+        >
           <img
             alt="1"
             src="./assist/LinkedIn.svg"
@@ -67,7 +105,14 @@ export default function ContactMe() {
             className=" w-5 grid justify-center content-center m-auto"
           />
         </button>
-        <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "https://dribbble.com/hossein-dehghan";
+          }}
+          className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500"
+        >
           <img
             alt="1"
             src="./assist/Dribbble.svg"
@@ -82,14 +127,21 @@ export default function ContactMe() {
             className=" w-5 grid justify-center content-center m-auto"
           />
         </button>
-        <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "http://instagram.com/hossein7dehghan";
+          }}
+          className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500"
+        >
           <img
             alt="1"
-            src="./assist/Github.svg"
-            className=" w-9 grid justify-center content-center m-auto"
+            src="./assist/insta.svg"
+            className=" w-7 grid justify-center content-center m-auto"
           />
           <p className=" text-neutral-50 grid justify-center content-center m-auto">
-            Github
+            Instagram
           </p>
           <img
             alt="1"
@@ -97,14 +149,22 @@ export default function ContactMe() {
             className=" w-5 grid justify-center content-center m-auto"
           />
         </button>
-        <button className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500">
+        <button
+          type="phone"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href =
+              "https://api.whatsapp.com/send?phone=+989176322459";
+          }}
+          className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500"
+        >
           <img
             alt="1"
-            src="./assist/Github.svg"
-            className=" w-9 grid justify-center content-center m-auto"
+            src="./whatsapp.svg"
+            className=" w-7 grid justify-center content-center m-auto"
           />
           <p className=" text-neutral-50 grid justify-center content-center m-auto">
-            Github
+            Whatsapp
           </p>
           <img
             alt="1"
