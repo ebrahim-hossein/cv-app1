@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Styles from "./Skills.module.scss";
 export default function ContactMe() {
   return (

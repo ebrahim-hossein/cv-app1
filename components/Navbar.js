@@ -26,7 +26,7 @@ const navigation = [
 ];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join();
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
@@ -105,7 +105,7 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? " bg-black text-white"
+                      ? " bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white p-2"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-4 rounded-md text-base font-medium"
                   )}
