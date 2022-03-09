@@ -99,7 +99,7 @@ export default function Navbar() {
 
           <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
+              {navItems.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
@@ -112,7 +112,12 @@ export default function Navbar() {
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
-                  <div className="flex">
+                  <div
+                    className="flex"
+                    onClick={() => {
+                      activeHandler(item.name);
+                    }}
+                  >
                     <img alt="2" src={item.img} className="h-5 pr-3" />
                     {item.name}
                   </div>
