@@ -1,6 +1,17 @@
 import Card from "./Ui/Card";
 import Styles from "./Skills.module.scss";
-export default function Portfolio() {
+import { useState } from "react";
+import { portfolio } from "../data/data";
+let index = 4;
+export default function Portfolio({ data1 }) {
+  const [workData, setWorkData] = useState(data1);
+  const isHide = workData.length === 8;
+  const moreData = () => {
+    let more = [];
+    more = portfolio.slice(index, index + 4);
+    setWorkData((prevState) => [...prevState, ...more]);
+    index += 4;
+  };
   return (
     <div id="Portfolio" className="m-5 sm:m-0">
       <span className=" text-center justify-center flex my-24 text-gray-600">
@@ -39,26 +50,32 @@ export default function Portfolio() {
       </div>
       <div className=" mt-20 ">
         <div className="grid lg:grid-cols-2 gap-y-28 m-auto content-center justify-center gap-x-14 max-w-5xl">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {workData.map((item) => (
+            <Card key={item.id} {...item} />
+          ))}
         </div>
-        <div className="sm:flex grid pt-12 gap-6 m-auto lg:max-w-5xl max-w-sm justify-center content-center">
-          <div className="sm:flex  content-center justify-center my-auto">
-            <p className=" text-gray-700  text-xl font-medium mr-4">
-              &lt;/p&gt;
-            </p>
-            <p className=" text-gray-300 font-medium  mx-10 ">
-              Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
-              ullamco cillum dolor.
-            </p>
-            <p className=" text-gray-700 ml-4 text-xl font-medium">&lt;p&gt;</p>
+        {!isHide && (
+          <div className="sm:flex grid pt-12 gap-6 m-auto lg:max-w-5xl max-w-sm justify-center content-center">
+            <div className="sm:flex  content-center justify-center my-auto">
+              <p className=" text-gray-700  text-xl font-medium mr-4">
+                &lt;/p&gt;
+              </p>
+              <p className=" text-gray-300 font-medium  mx-10 ">
+                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+                ullamco cillum dolor.
+              </p>
+              <p className=" text-gray-700 ml-4 text-xl font-medium">
+                &lt;p&gt;
+              </p>
+            </div>
+            <button
+              onClick={moreData}
+              className="bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white px-5 py-3"
+            >
+              Show More
+            </button>
           </div>
-          <button className="bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white px-5 py-3">
-            Show More
-          </button>
-        </div>
+        )}
       </div>
     </div>
   );

@@ -1,14 +1,13 @@
 import Head from "next/head";
-
 import Navbar from "../components/Navbar";
-
+import { portfolio, work } from "../data/data";
 import Info from "../components/Info";
 import Skills from "../components/Skills";
 import Portfolio from "../components/Portfolio";
 import Workhistory from "../components/Workhistory";
 import ContactMe from "../components/ContactMe";
 
-export default function Home() {
+export default function Home({ workss, Portfolios }) {
   return (
     <div className=" ">
       <Head>
@@ -20,10 +19,18 @@ export default function Home() {
       <main className="">
         <Info />
         <Skills />
-        <Portfolio />
-        <Workhistory />
+        <Portfolio data1={Portfolios} />
+        <Workhistory data={workss} />
         <ContactMe />
       </main>
     </div>
   );
 }
+export const getStaticProps = async () => {
+  return {
+    props: {
+      workss: work.slice(0, 4),
+      Portfolios: portfolio.slice(0, 4),
+    },
+  };
+};

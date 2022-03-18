@@ -1,4 +1,5 @@
 import Styles from "./Skills.module.scss";
+
 export default function ContactMe() {
   return (
     <div id="ContactMe" className="m-5 sm:m-0">
@@ -171,6 +172,41 @@ export default function ContactMe() {
             src="./assist/Down2.svg"
             className=" w-5 grid justify-center content-center m-auto"
           />
+        </button>
+      </div>
+      <div className=" pb-5 md:flex m-auto md:max-w-3xl justify-center content-center">
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.open(
+              "mailto:hossein-dehghan@info.com?subject=SendMail&body=Description"
+            );
+          }}
+          className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7"
+        >
+          <img
+            alt="1"
+            src="./Message.svg"
+            className=" w-6 grid justify-center content-center m-auto"
+          />
+          <p className=" text-neutral-50">hossein-dehghan@info.com</p>
+        </button>
+
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "tel:+989176322459";
+          }}
+          className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7"
+        >
+          <img
+            alt="1"
+            src="./phone.svg"
+            className=" w-6 grid justify-center content-center m-auto"
+          />
+          <p className=" text-neutral-50">+989176322459</p>
         </button>
       </div>
       <div className="flex content-center m-auto justify-center my-5">
