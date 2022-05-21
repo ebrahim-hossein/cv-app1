@@ -2,7 +2,7 @@ import Styles from "./Skills.module.scss";
 
 export default function ContactMe() {
   return (
-    <div id="ContactMe" className="m-5 sm:m-0">
+    <div id="ContactMe" className="m-5">
       <span className=" text-center justify-center flex my-24 text-gray-600">
         - - - - - - - - - - - - - - - - - - - - - -
       </span>
@@ -30,26 +30,45 @@ export default function ContactMe() {
           </div>
           <div className="sm:flex justify-between content-center mt-7 gap-14">
             <div>
+            <p className=" text-gray-700 ml-10 text-xl font-medium">
+                &lt;p&gt;
+              </p>
+              <p className=" text-gray-300 font-medium  mx-14 my-3 sm:mx-0 max-w-lg">
+                To contact me, you can use the following social networks, as
+                well as the email and mobile phone that I have provided to you,
+                and also use the CV download option to download and view the
+                resume in PDF format. In case you want to see my portfolio use
+                the other option.
+              </p>
               <p className=" text-gray-700 ml-10 text-xl font-medium">
                 &lt;/p&gt;
               </p>
-              <p className=" text-gray-300 font-medium  mx-14 my-3 sm:mx-0">
-                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
-                ullamco cillum dolor.
-              </p>
-              <p className=" text-gray-700 ml-10 text-xl font-medium">
-                &lt;p&gt;
-              </p>
+              
             </div>
             <button
               type="button"
               onClick={(e) => {
                 e.preventDefault();
-                window.location.href = "./A4.pdf";
+                window.location.href = "./pdf/CV.pdf";
               }}
-              className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7"
+              className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7 transition ease-in-out delay-100  hover:-translate-y-1  duration-300"
             >
               <p className=" text-neutral-50">Download CV</p>
+              <img
+                alt="1"
+                src="./Down.svg"
+                className=" w-7 grid justify-center content-center m-auto"
+              />
+            </button>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "./pdf/portfolio.pdf";
+              }}
+              className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7 transition ease-in-out delay-100  hover:-translate-y-1  duration-300"
+            >
+              <p className=" text-neutral-50">Download Portfolio</p>
               <img
                 alt="1"
                 src="./Down.svg"
@@ -59,12 +78,12 @@ export default function ContactMe() {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-5 grid-cols-2 gap-14 m-auto content-center justify-center my-16 max-w-5xl">
+      <div className="md:grid md:grid-cols-5 flex flex-wrap gap-14 m-auto content-center justify-center my-16 max-w-5xl">
         <button
           type="button"
           onClick={(e) => {
             e.preventDefault();
-            window.location.href = "https://github.com/hd-9";
+            window.location.href = "https://github.com/hossein7dehghan";
           }}
           className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500"
         >
@@ -88,7 +107,7 @@ export default function ContactMe() {
           onClick={(e) => {
             e.preventDefault();
             window.location.href =
-              "https://www.linkedin.com/in/hossein-dehghan-4b5b8b231/";
+              "https://www.linkedin.com/in/hossein7dehghan/";
           }}
           className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500"
         >
@@ -110,7 +129,7 @@ export default function ContactMe() {
           type="button"
           onClick={(e) => {
             e.preventDefault();
-            window.location.href = "https://dribbble.com/hossein-dehghan";
+            window.location.href = "https://dribbble.com/hossein7dehghan";
           }}
           className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500"
         >
@@ -155,7 +174,8 @@ export default function ContactMe() {
           onClick={(e) => {
             e.preventDefault();
             window.location.href =
-              "https://api.whatsapp.com/send?phone=+989176322459";
+              // "https://api.whatsapp.com/send?phone=+989176322459"
+              "https://wa.me/message/3BQLVSCUCJWRL1";
           }}
           className=" w-28 h-28 bg-[#131516] rounded-full border-4 border-[#2A2D31] shadow-2xl grid justify-center content-center m-auto gap-y-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-500"
         >
@@ -180,17 +200,18 @@ export default function ContactMe() {
           onClick={(e) => {
             e.preventDefault();
             window.open(
-              "mailto:hossein-dehghan@info.com?subject=SendMail&body=Description"
+              "mailto:hossein-dehghan@info.com?subject=NewMail&body=Description"
             );
           }}
-          className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7"
+          className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7 transition ease-in-out delay-100  hover:-translate-y-1  duration-300"
         >
           <img
             alt="1"
             src="./Message.svg"
             className=" w-6 grid justify-center content-center m-auto"
           />
-          <p className=" text-neutral-50">hossein-dehghan@info.com</p>
+
+          <p className=" text-neutral-50">info@hossein-dehghan.com</p>
         </button>
 
         <button
@@ -199,7 +220,7 @@ export default function ContactMe() {
             e.preventDefault();
             window.location.href = "tel:+989176322459";
           }}
-          className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7"
+          className=" px-4 py-3 bg-[#131516] rounded-2xl border-4 border-[#2A2D31] shadow-2xl   content-center m-auto   flex justify-center gap-3 mt-7 transition ease-in-out delay-100  hover:-translate-y-1  duration-300"
         >
           <img
             alt="1"
@@ -210,11 +231,13 @@ export default function ContactMe() {
         </button>
       </div>
       <div className="flex content-center m-auto justify-center my-5">
-        <p className=" text-gray-700  sm:text-xl font-medium">&lt;/p&gt;</p>
-        <p className=" text-gray-300  font-normal text-sm sm:text-base sm:mx-7 mx-2">
-          Copyright © 2022 Hossein. All rights reserved.
+      <p className=" text-gray-700  text-xl font-medium">&lt;p&gt;</p>
+        <p className=" text-gray-300  font-normal text-sm sm:text-base sm:mx-7 mx-2 text-center">
+          Copyright © 2016-2022 Hossein Dehgahn.<br/>
+            All Rights Reserved.
         </p>
-        <p className=" text-gray-700  text-xl font-medium">&lt;p&gt;</p>
+        
+        <p className=" text-gray-700  sm:text-xl font-medium">&lt;/p&gt;</p>
       </div>
     </div>
   );

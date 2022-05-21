@@ -2,9 +2,9 @@ export default function Info() {
   return (
     <div id="HosseinDehghan">
       <div className="sm:grid sm:grid-cols-2 sm:max-w-5xl justify-center content-center m-auto">
-        <div className="px-3  py-4  sm:text-left justify-center relative sm:m-0 m-5">
+        <div className="px-3  py-4  sm:text-left justify-center relative  m-5">
           <div className="word  text-5xl sm:text-7xl lg:text-[8rem] absolute ">
-            I’m
+            I&apos;m
           </div>
           <div className="word text-5xl sm:text-7xl lg:text-[8rem] absolute">
             Hossein
@@ -27,9 +27,11 @@ export default function Info() {
               &lt;p&gt;
             </p>
             <p className=" text-gray-300 font-medium  mx-9 my-3 ">
-              Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
-              ullamco cillum dolor. Voluptate exercitation incididunt aliquip
-              deserunt reprehenderit elit laborum
+              My name is Hossein. I have a bachelor degree in information
+              technology(IT). Since i was young , i was intrested in programming
+              and designing, and I decided to try hard for my goal which is
+              becoming a professional front-end designer and programmer and
+              since then I’ve been learning and trying every day .
             </p>
             <p className=" text-gray-700 ml-10 text-xl font-medium">
               &lt;/p&gt;

@@ -5,7 +5,7 @@ import { work } from "../data/data";
 let index = 4;
 const Workhistory = ({ data }) => {
   const [workData, setWorkData] = useState(data);
-  const isHide = workData.length === 9;
+  const isHide = workData.length === 6;
   const moreData = () => {
     let more = [];
     more = work.slice(index, index + 4);
@@ -13,7 +13,7 @@ const Workhistory = ({ data }) => {
     index += 4;
   };
   return (
-    <div id="Workhistory" className="m-5 sm:m-0">
+    <div id="Workhistory" className="m-5 ">
       <span className=" text-center justify-center flex my-24 text-gray-600">
         - - - - - - - - - - - - - - - - - - - - - -
       </span>
@@ -40,37 +40,36 @@ const Workhistory = ({ data }) => {
             </p>
           </div>
 
-          <p className=" text-gray-700 ml-10 text-xl font-medium">&lt;/p&gt;</p>
-          <p className=" text-gray-300 font-medium  mx-10 my-3 ">
-            Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-            cillum dolor.
-          </p>
           <p className=" text-gray-700 ml-10 text-xl font-medium">&lt;p&gt;</p>
+          <p className=" text-gray-300 font-medium  mx-10 my-3 ">
+            Projects and work I have done or participated in so far and their
+            histories.
+          </p>
+          <p className=" text-gray-700 ml-10 text-xl font-medium">&lt;/p&gt;</p>
         </div>
       </div>
       <div className=" mt-20 ">
-        <div className="grid lg:grid-cols-2 gap-14 m-auto content-center justify-center max-w-5xl">
+        <div className="grid md:grid-cols-2 gap-14 m-auto content-center justify-center max-w-5xl">
           {workData.map((item) => (
             <Work key={item.id} {...item} />
           ))}
         </div>
         {!isHide && (
-          <div className="sm:flex grid pt-12 gap-6 m-auto lg:max-w-5xl max-w-sm justify-center content-center">
+          <div className="sm:flex grid pt-12 gap-6 m-auto md:max-w-5xl max-w-sm justify-center content-center">
             <div className="sm:flex  content-center justify-center my-auto">
               <p className=" text-gray-700  text-xl font-medium mr-4">
-                &lt;/p&gt;
+                &lt;p&gt;
               </p>
               <p className=" text-gray-300 font-medium  mx-14 sm:mx-0">
-                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
-                ullamco cillum dolor.
+                Use the Show More button to view more items.
               </p>
               <p className=" text-gray-700 ml-4 text-xl font-medium">
-                &lt;p&gt;
+                &lt;/p&gt;
               </p>
             </div>
             <button
               onClick={moreData}
-              className="bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white px-5 py-3"
+              className="bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white px-5 py-3 transition ease-in-out delay-100  hover:-translate-y-1  duration-300"
             >
               Show More
             </button>

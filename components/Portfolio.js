@@ -5,7 +5,7 @@ import { portfolio } from "../data/data";
 let index = 4;
 export default function Portfolio({ data1 }) {
   const [workData, setWorkData] = useState(data1);
-  const isHide = workData.length === 8;
+  const isHide = workData.length === 6;
   const moreData = () => {
     let more = [];
     more = portfolio.slice(index, index + 4);
@@ -13,7 +13,7 @@ export default function Portfolio({ data1 }) {
     index += 4;
   };
   return (
-    <div id="Portfolio" className="m-5 sm:m-0">
+    <div id="Portfolio" className="m-5 ">
       <span className=" text-center justify-center flex my-24 text-gray-600">
         - - - - - - - - - - - - - - - - - - - - - -
       </span>
@@ -40,37 +40,38 @@ export default function Portfolio({ data1 }) {
             </p>
           </div>
 
-          <p className=" text-gray-700 ml-10 text-xl font-medium">&lt;/p&gt;</p>
-          <p className=" text-gray-300 font-medium  mx-14 my-3 sm:mx-0">
-            Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
-            cillum dolor.
-          </p>
           <p className=" text-gray-700 ml-10 text-xl font-medium">&lt;p&gt;</p>
+          <p className=" text-gray-300 font-medium  mx-14 my-3 sm:mx-0">
+            In this section you can see works I have done and the tools I have
+            used to build them.
+          </p>
+          <p className=" text-gray-700 ml-10 text-xl font-medium">&lt;/p&gt;</p>
         </div>
       </div>
       <div className=" mt-20 ">
-        <div className="grid lg:grid-cols-2 gap-y-28 m-auto content-center justify-center gap-x-14 max-w-5xl">
+        <div className="grid md:grid-cols-2 gap-y-28 m-auto content-center justify-center gap-x-14 max-w-5xl">
           {workData.map((item) => (
             <Card key={item.id} {...item} />
           ))}
         </div>
         {!isHide && (
-          <div className="sm:flex grid pt-12 gap-6 m-auto lg:max-w-5xl max-w-sm justify-center content-center">
+          <div className="sm:flex grid pt-12 gap-6 m-auto md:max-w-5xl max-w-sm justify-center content-center">
             <div className="sm:flex  content-center justify-center my-auto">
+            <p className=" text-gray-700 ml-4 text-xl font-medium">
+                &lt;p&gt;
+              </p>
+              
+              <p className=" text-gray-300 font-medium  mx-10 ">
+                Use the Show More button to view more items.
+              </p>
               <p className=" text-gray-700  text-xl font-medium mr-4">
                 &lt;/p&gt;
               </p>
-              <p className=" text-gray-300 font-medium  mx-10 ">
-                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
-                ullamco cillum dolor.
-              </p>
-              <p className=" text-gray-700 ml-4 text-xl font-medium">
-                &lt;p&gt;
-              </p>
+              
             </div>
             <button
               onClick={moreData}
-              className="bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white px-5 py-3"
+              className="bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white px-5 py-3 transition ease-in-out delay-100  hover:-translate-y-1  duration-300"
             >
               Show More
             </button>

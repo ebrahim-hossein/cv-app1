@@ -16,7 +16,7 @@ const navigation = [
     current: false,
   },
   {
-    name: "Work history",
+    name: "Workhistory",
     href: "#Workhistory",
     img: "./Work.svg",
     current: false,
@@ -27,7 +27,7 @@ const navigation = [
     img: "./phone.svg",
     current: false,
   },
-  { name: "Download CV", href: "./A4.pdf", img: "./Down.svg", current: false },
+  { name: "Download CV", href: "./CV.pdf", img: "./Down.svg", current: false },
 ];
 
 function classNames(...classes) {
@@ -66,15 +66,15 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-end md:items-stretch md:justify-center pr-3">
-                <div className="flex-shrink-0 flex items-center">
+                <div className="flex-shrink-0 flex items-center md:hidden">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="/logo.svg"
+                    src="./logo.svg"
                     alt="Hossein Dehghan"
                   />
                 </div>
                 <div className="hidden md:block sm:ml-6">
-                  <div className=" relative flex space-x-4">
+                  <div className=" relative flex lg:space-x-4">
                     {navItems.map((item) => (
                       <a
                         key={item.name}
@@ -83,7 +83,7 @@ export default function Navbar() {
                           item.current
                             ? "  bg-[#131516] rounded-xl border-2 border-[#2A2D31] shadow-2xl text-white p-2 "
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "md:px-3 md:py-2 lg:px-3 lg:py-3 rounded-lg text-sm font-medium"
+                          "md:px-2 md:py-2 lg:px-3 lg:py-3 rounded-lg text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                         onClick={() => {
